@@ -52,7 +52,7 @@
                     <a href="mailto:gracehime123@gmail.com" target="_blank"><i class='fa fa-envelope-open'></i></a>
                 </div>
             </nav>
-            <button onclick="topFunction()" id="myBtn" title="Go to top" style="color:white"><div class="index-arrow"></div>Top</button>
+            <button onclick="scrollToTop()" id="myBtn" title="Go to top" style="color:white"><div class="index-arrow"></div>Top</button>
         </div>
 
         <div class="site-container">
@@ -131,10 +131,16 @@
         }
 
         // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
+        var rootElement = document.documentElement;
+
+        function scrollToTop() {
+            // Scroll to top logic
+            rootElement.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
         }
+        mybutton.addEventListener("click", scrollToTop);
     </script>
 
 </body>

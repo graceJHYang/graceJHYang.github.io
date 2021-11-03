@@ -65,7 +65,7 @@
 
         </div>
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top" style="color:white"><div class="index-arrow"></div>Top</button>
+        <button onclick="scrollToTop()" id="myBtn" title="Go to top" style="color:white"><div class="index-arrow"></div>Top</button>
 
         <div class="site-main">
             <div class="site-content">
@@ -313,6 +313,41 @@
                 </div>
 
 
+                <h4 class="title-container-2">Cake Decorating</h4>
+                <div class="container-gal">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="img/designs/.png" width="100%" alt="Cover" class="img-gal">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="img/designs/.png" width="100%" alt="Spread 1" class="img-gal">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="img/designs/.png" width="100%" alt="Spread 2" class="img-gal">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1, 3)">❮</a>
+                    <a class="next" onclick="plusSlides(1, 3)">❯</a>
+
+                    <div class="row-gal">
+                        <div class="column-gal-2">
+                            <img src="img/designs/.png" width="100%" alt="Cover" class="img-gal demo cursor" onclick="currentSlide(1, 3)">
+                        </div>
+                        <div class="column-gal-2">
+                            <img src="img/designs/.png" width="100%" alt="Spread 1" class="img-gal demo cursor" onclick="currentSlide(2, 3)">
+                        </div>
+                        <div class="column-gal-2">
+                            <img src="img/designs/.png" width="100%" alt="Spread 2" class="img-gal demo cursor" onclick="currentSlide(3, 3)">
+                        </div>
+                    </div>
+                </div>
+
+
                 <script>
                     // Js help from: https://w3schools.invisionzone.com/topic/57048-need-two-slideshows-%E2%80%94-both-with-arrow-and-dots/
                     var slideIndex = 1;
@@ -385,10 +420,16 @@
         }
 
         // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
+        var rootElement = document.documentElement;
+
+        function scrollToTop() {
+            // Scroll to top logic
+            rootElement.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
         }
+        mybutton.addEventListener("click", scrollToTop);
     </script>
 
 </body>

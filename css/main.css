@@ -529,6 +529,7 @@ span {
     animation: all 0.3s ease;
     background-color: #7a4988;
     padding: 1rem;
+    scroll-behavior: smooth;
 }
 
 #myBtn .index-arrow {
