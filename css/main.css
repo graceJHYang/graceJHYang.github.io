@@ -708,3 +708,8 @@ span {
         height: auto;
     }
 }
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url('Lato') format('woff2'), url('Lato') format('woff'), url('Lato') format('truetype');
+}

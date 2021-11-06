@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography</title>
+    <title>Grace Yang</title>
     <link rel='shortcut icon' type='image/x-icon' href='img/logo.png' />
     <link href="css/main.css" rel="stylesheet">
     <link href="css/flex.css" rel="stylesheet">
@@ -17,91 +17,121 @@
 
 <body>
 
-    <div class="side-nav">
+    <div class="page-content">
+        <div class="side-nav">
 
-        <div class="brand">
-            <a class="brand-link" href="index.html">Grace Yang</a>
-            <!-- <p class="logo-info">Aspiring illustrator/designer, visual artist & photographer</p> -->
+            <div class="brand">
+                <a class="brand-link" href="index.html">Grace Yang</a>
+                <!-- <p class="logo-info">Aspiring illustrator/designer, visual artist & photographer</p> -->
 
-            <div id="content-desktop" class="icon-nav">
-                <a href="https://www.instagram.com/grcieart/?hl=en" target="_blank"><i class='fa fa-instagram'></i></a>
-                <a href="https://www.linkedin.com/in/grace-yang-b319b313a/" target="_blank"><i class='fa fa-linkedin'></i></a>
-                <!-- <a href="https://www.facebook.com/" target="_blank"><i class='fa fa-behance-square'></i></a> -->
-                <a href="mailto:gracehime123@gmail.com" target="_blank"><i class='fa fa-envelope-open'></i></a>
+                <div id="content-desktop" class="icon-nav">
+                    <a href="https://www.instagram.com/grcieart/?hl=en" target="_blank"><i class='fa fa-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/grace-yang-b319b313a/" target="_blank"><i class='fa fa-linkedin'></i></a>
+                    <!-- <a href="https://www.facebook.com/" target="_blank"><i class='fa fa-behance-square'></i></a> -->
+                    <a href="mailto:gracehime123@gmail.com" target="_blank"><i class='fa fa-envelope-open'></i></a>
+                </div>
+            </div>
+
+            <label for="toggle">&#9822;</label>
+            <input type="checkbox" id="toggle" />
+
+            <nav class="main-nav">
+
+                <div class="left-padding">
+                    <a class="side-nav-button" href="index.html">HOME</a>
+                    <a class="side-nav-button" href="about.html">ABOUT</a>
+                    <a class="side-nav-button" href="project_3.html">Slojourn</a>
+                    <a class="side-nav-button" href="project_5.html">Pak'n-go</a>
+                    <a class="side-nav-button" href="project_1.html">BCHJA Brochure</a>
+                    <a class="side-nav-button" href="project_2.html">Magazine Redesign</a>
+                    <a class="side-nav-button" href="project_6.html">Graphic Designs</a>
+                    <a class="side-nav-button" href="photography.html">Photography</a>
+                </div>
+
+                <div id="content-mobile" class="icon-nav-m">
+                    <div class="left-padding">
+                        <a href="https://www.instagram.com/grcieart/?hl=en" target="_blank"><i class='fa fa-instagram'></i></a>
+                    </div>
+                    <div class="left-padding-2">
+                        <a href="https://www.linkedin.com/in/grace-yang-b319b313a/" target="_blank"><i class='fa fa-linkedin'></i></a>
+                    </div>
+                    <!-- <a href="https://www.facebook.com/" target="_blank"><i class='fa fa-behance-square'></i></a> -->
+                    <div class="left-padding-2">
+                        <a href="mailto:gracehime123@gmail.com" target="_blank"><i class='fa fa-envelope-open'></i></a>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+        <button onclick="scrollToTop()" id="myBtn" title="Go to top" style="color:white"><div class="index-arrow"></div>Top</button>
+
+        <div class="site-main">
+            <div class="site-content">
+
+                <!-- Photo Grid -->
+                <div class="flexbox">
+                    <div class="grid-2">
+                        <div class="content">
+                            <a href="nature.html">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="img/photography/cover.jpg">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Nature & Landscape</h3>
+                                    <!-- <p class="content-text">Graphic/Print Design</p> -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-2">
+                        <!-- <div class="container"> -->
+                        <div class="content">
+                            <a href="equestrian.html">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="img/photography/eq_bg.jpg">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Equestrian</h3>
+                                    <!-- <p class="content-text">Graphic/Print Design</p> -->
+                                </div>
+                            </a>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+
+                <div class="flexbox-2">
+                    <div class="grid-2">
+                        <div class="content">
+                            <a href="food.html">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="img/bake/bake-bg.jpg">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Food & Baking</h3>
+                                    <p class="content-text">Home baking + foodiejournal</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <div class="grid-2">
+                        <div class="content">
+                            <a href="project_5.html">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="img/pakngo/pakngo-mockup-reduced.jpg">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Pak'n-go</h3>
+                                    <p class="content-text">UX/UI Design</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+
             </div>
         </div>
 
-        <label for="toggle">&#9822;</label>
-        <input type="checkbox" id="toggle" />
+        <footer>&#169 Grace Yang</footer>
 
-        <nav class="main-nav">
-            <a class="side-nav-button" href="index.html">HOME</a>
-            <a class="side-nav-button" href="about.html">ABOUT</a>
-            <a class="side-nav-button" href="project_3.html">Slojourn</a>
-            <a class="side-nav-button" href="project_5.html">Pak'n-go</a>
-            <a class="side-nav-button" href="project_1.html">BCHJA Brochure</a>
-            <!-- <a class="side-nav-button" href="project_4.html">Cookbook Redesign</a> -->
-            <a class="side-nav-button" href="project_2.html">Magazine Redesign</a>
-            <a class="side-nav-button" href="project_6.html">Miscellaneous Designs</a>
-            <a class="side-nav-button" href="Photography.html">Photography</a>
-
-            <div id="content-mobile" class="icon-nav-m">
-                <a href="https://www.instagram.com/grcieart/?hl=en" target="_blank"><i class='fa fa-instagram'></i></a>
-                <a href="https://www.linkedin.com/in/grace-yang-b319b313a/" target="_blank"><i class='fa fa-linkedin'></i></a>
-                <!-- <a href="https://www.facebook.com/" target="_blank"><i class='fa fa-behance-square'></i></a> -->
-                <a href="mailto:gracehime123@gmail.com" target="_blank"><i class='fa fa-envelope-open'></i></a>
-            </div>
-        </nav>
-        <button onclick="ScrollToTop()" id="myBtn" title="Go to top" style="color:white"><div class="index-arrow"></div>Top</button>
     </div>
-
-    <div class="site-main">
-        <div class="site-content">
-            <!-- Photo Grid -->
-            <div class="row">
-                <div class="column">
-                    <img src="img/photography/bird.jpg">
-                    <img src="img/photography/eyes.jpg">
-                    <img src="img/photography/script_1.jpg">
-                    <img src="img/photography/views.jpg">
-                    <img src="img/photography/waterfall.jpg">
-                    <img src="img/photography/wildcard_1.jpg">
-                    <img src="img/photography/landscape.jpg">
-                    <img src="img/photography/landscape2.jpg">
-                    <img src="img/photography/landscape3.jpg">
-                    <img src="img/photography/landscape4.jpg">
-                    <img src="img/photography/landscape5.jpg">
-                </div>
-                <div class="column">
-                    <img src="img/photography/IMG_9199.jpg">
-                    <img src="img/photography/IMG_9200.jpg">
-                    <img src="img/photography/IMG_9201.jpg">
-                    <img src="img/photography/IMG_9202.jpg">
-                    <img src="img/photography/IMG_9203.jpg">
-                    <img src="img/photography/IMG_9204.jpg">
-                    <img src="img/photography/IMG_9211.jpg">
-                    <img src="img/photography/IMG_9213.jpg">
-                    <img src="img/photography/IMG_9214.jpg">
-                    <img src="img/photography/IMG_9218.jpg">
-                </div>
-                <div class="column">
-                    <img src="img/photography/IMG_9219.jpg">
-                    <img src="img/photography/IMG_9228.jpg">
-                    <img src="img/photography/IMG_9231.jpg">
-                    <img src="img/photography/IMG_9232.jpg">
-                    <img src="img/photography/IMG_9233.jpg">
-                    <img src="img/photography/IMG_9234.jpg">
-                    <img src="img/photography/IMG_9239.jpg">
-                    <img src="img/photography/IMG_9253.jpg">
-                    <img src="img/photography/IMG_9257.jpg">
-                    <img src="img/photography/IMG_9261.jpg">
-                    <img src="img/photography/IMG_9264.jpg">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer>&#169 Grace Yang 2021</footer>
 
     <script>
         //Get the button
