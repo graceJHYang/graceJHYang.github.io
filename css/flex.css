@@ -69,6 +69,12 @@
       padding: 0 0 0 12em;
   }
   
+  .flexbox-3 {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+  }
+  
   .grid-2 {
       flex: 1 1 50%;
       flex-wrap: wrap;
@@ -91,7 +97,8 @@
           border-image-width: 100%;
       }
       .flexbox,
-      .flexbox-2 {
+      .flexbox-2,
+      .flexbox-3 {
           flex-wrap: wrap;
       }
       .grid-2 {
