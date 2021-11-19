@@ -314,7 +314,7 @@ span {
 }
 
 figcaption {
-    font-size: 0.3rem;
+    font-size: 0.7rem;
     font-family: 'Lato', sans-serif;
     text-align: center;
 }
@@ -357,6 +357,11 @@ span {
     padding: 2em 0em 0em 12em;
 }
 
+.text-container {
+    text-align: center;
+    padding: 0em 0em 1em 12em;
+}
+
 
 /* Position the image container (needed to position the left and right arrows) */
 
@@ -364,6 +369,10 @@ span {
     position: relative;
     /* padding: 1em 4em 3em 12em; */
     padding: 1em 0em 3em 12em;
+}
+
+.container-gal2 {
+    position: relative;
 }
 
 
