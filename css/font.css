@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'twaysky';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: NotoSans-Light;
+    src: url("../fonts/NotoSans-Light.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: NotoSans-Regular;
+    src: url("../fonts/NotoSans-Regular.ttf")
+}
+
+@font-face {
+    font-family: NotoSans-Medium;
+    src: url("../fonts/NotoSans-Medium.ttf")
+}
